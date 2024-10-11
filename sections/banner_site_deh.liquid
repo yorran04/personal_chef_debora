@@ -1,0 +1,255 @@
+{{ 'custom_banner_deh.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .text_link{
+      text-decoration: none;
+      color: {{section.settings.color_text}};
+      font-weight: 600;
+      cursor: pointer;
+  }
+
+  .img1{
+    opacity: {{section.settings.image_overlay_opacity | divided_by: 100.2 }}
+  }
+
+  .paragrafo{
+      color: {{section.settings.color_text}};
+  }
+
+  .text_link2{
+      text-decoration: none;
+      color: {{section.settings.color_text2}};
+      font-weight: 600;
+      cursor: pointer;
+  }
+
+  .paragrafo2{
+      color: {{section.settings.color_text2}};
+  
+  }
+{% endstyle %}
+
+<main class="container">
+  <div class="content">
+
+
+    <div class="item1">
+        <a class="link_content" href="{{section.settings.link_texto}}">
+      <img class="img1" src="{{section.settings.img_banner |  img_url: ''}}" width="100%" height="100%">
+
+      <div class="content_text content_text--{{section.settings.text_aline}}">
+        {% if section.settings.link_texto != blank %}
+          <h2 class="txt_img">
+            {{ section.settings.texto_principal }}
+          </h2>
+
+          <p class="paragrafo">{{ section.settings.text_area }}</p>
+        {% endif %}
+      </div>
+        </a>
+    </div>
+
+
+
+    <div class="item2">
+        <a class="link_content" href="{{section.settings.link_texto2}}">
+      <img class="img1" src="{{section.settings.img_banner2 |  img_url: ''}}" width="100%" height="100%">
+
+      <div class="content_text content_text--{{section.settings.text_aline}}">
+        {% if section.settings.link_texto != blank %}
+          <h2 class="txt_img">
+            {{ section.settings.texto_principal2 }}
+          </h2>
+
+          <p class="paragrafo2">{{ section.settings.text_area2 }}</p>
+        {% endif %}
+      </div>
+      </a>
+    </div>
+
+
+
+
+    <div class="item3">
+        <a class="link_content" href="{{section.settings.link_texto3}}">
+        <img class="img1" src="{{section.settings.img_banner3 |  img_url: ''}}" width="100%" height="100%">
+
+      <div class="content_text content_text--{{section.settings.text_aline}}">
+        {% if section.settings.link_texto != blank %}
+          <h2 class="txt_img">
+           {{ section.settings.texto_principal3 }}
+          </h2>
+        {% endif %}
+      </div>
+      </a>
+    </div>
+
+
+
+
+    <div class="item4">
+        <a class="link_content" href="{{section.settings.link_texto4}}">
+        <img class="img1" src="{{section.settings.img_banner4 |  img_url: ''}}" width="100%" height="100%">
+
+        <div class="content_text content_text--{{section.settings.text_aline}}">
+          {% if section.settings.link_texto != blank %}
+            <h2 class="txt_img">
+              {{ section.settings.texto_principal4 }}
+            </h2>
+          {% endif %}
+        </div>
+        </a>
+    </div>
+
+
+  </div>
+
+</main>
+
+{% schema %}
+{
+  "name": "banner_deh",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Imagem Banner 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "imagem banner 1"
+    },
+    {
+      "type": "range",
+      "id": "image_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Opacidade",
+      "default": 30
+    },
+    {
+      "type": "text",
+      "id": "texto_principal",
+      "label": "texto principal",
+      "default": "Link para seção"
+    },
+    {
+      "type": "textarea",
+      "id": "text_area",
+      "label": "paragrafo"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "cor do texto"
+    },
+    {
+      "type": "select",
+      "id": "text_aline",
+      "label": "alinhamento de texto",
+      "options": [
+        {
+          "value": "top",
+          "label": "topo"
+        },
+        {
+          "value": "center",
+          "label": "centro"
+        },
+        {
+          "value": "bottom",
+          "label": "abixo"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "url",
+      "id": "link_texto",
+      "label": "link texto"
+    },
+
+    {
+      "type": "header",
+      "content": "Imagem Banner 2 "
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": "imagem banner 2"
+    },
+    {
+      "type": "text",
+      "id": "texto_principal2",
+      "label": "texto principal",
+      "default": "Link para seção"
+    },
+    {
+      "type": "textarea",
+      "id": "text_area2",
+      "label": "paragrafo"
+    },
+    {
+      "type": "color",
+      "id": "color_text2",
+      "label": "cor do texto"
+    },
+    {
+      "type": "url",
+      "id": "link_texto2",
+      "label": "link texto 2"
+    },
+
+
+    {
+      "type": "header",
+      "content": "Imagem Banner 3 "
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner3",
+      "label": "imagem banner 3"
+    },
+    {
+      "type": "text",
+      "id": "texto_principal3",
+      "label": "texto principal 3",
+      "default": "Link para seção"
+    },
+    {
+      "type": "url",
+      "id": "link_texto3",
+      "label": "link texto 3"
+    },
+
+    {
+      "type": "header",
+      "content": "Imagem Banner 4 "
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner4",
+      "label": "imagem banner 4"
+    },
+    {
+      "type": "text",
+      "id": "texto_principal4",
+      "label": "texto principal 4",
+      "default": "Link para seção"
+    },
+    {
+      "type": "url",
+      "id": "link_texto4",
+      "label": "link texto 4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "banner_deh"
+    }
+  ]
+}
+{% endschema %}

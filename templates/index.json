@@ -19,7 +19,7 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "btn_color": "yellow"
+            "color_scheme": ""
           }
         }
       },
@@ -31,8 +31,7 @@
         "image": "shopify:\/\/shop_images\/flatlay-iron-skillet-with-meat-and-other-food.jpg",
         "image_overlay_opacity": 40,
         "text_area": "A vida é muito curta para não comer aquele prato que você ama.",
-        "color-scheme": "",
-        "color_text": "black",
+        "color-texto": "",
         "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
@@ -84,38 +83,33 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_9wenMr": {
-      "type": "featured-collection",
+    "banner_site_deh_FxEqhF": {
+      "type": "banner_site_deh",
       "settings": {
-        "title": "Featured collection",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-4",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "img_banner": "shopify:\/\/shop_images\/a-hand-removes-a-sweater-from-a-clothing-rack.jpg",
+        "image_overlay_opacity": 80,
+        "texto_principal": "Bolinho de abobora",
+        "text_area": "paragrafo para texto",
+        "color_text": "#121212",
+        "text_aline": "center",
+        "link_texto": "shopify:\/\/products\/ddfaf",
+        "img_banner2": "shopify:\/\/shop_images\/vintage-shopping.jpg",
+        "texto_principal2": "Camarão",
+        "text_area2": "dadofdao",
+        "color_text2": "#121212",
+        "link_texto2": "shopify:\/\/products\/camarao",
+        "img_banner3": "shopify:\/\/shop_images\/minimalist-retail-clothing-display.jpg",
+        "texto_principal3": "Queijos",
+        "link_texto3": "shopify:\/\/products\/queijos",
+        "img_banner4": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+        "texto_principal4": "Bolinho de carne",
+        "link_texto4": "shopify:\/\/products\/bolinho-de-carne"
       }
     }
   },
   "order": [
     "image_banner",
     "collection_list_biY8bY",
-    "featured_collection_9wenMr"
+    "banner_site_deh_FxEqhF"
   ]
 }

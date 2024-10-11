@@ -1,0 +1,76 @@
+{{ 'custom-mosaico.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+    .img_box{
+        object-fit: cover;
+        border-radius: 10px;
+    }
+{% endstyle %}
+
+
+<section class="containerr">
+
+    <div class="content">
+        <div class="mosaicos">
+        <div class="box_principal">
+            <img class="img_box" src="{{section.settings.img_box1 |  img_url: ''}}" width="100%" height="100%">
+        </div>
+        <div class="mosaicos_secundarios">
+        <div class="box"><img class="img_box" src="{{section.settings.img_box1 |  img_url: ''}}" width="100%" height="100%"></div>
+        <div class="box"><img class="img_box" src="{{section.settings.img_box1 |  img_url: ''}}" width="100%" height="100%"></div>
+        </div>
+        </div>
+
+    <div class="content_info">
+
+    <h3>Nossas redes sociais</h3>
+
+    <div class="botoes">
+
+        <button class="btn"><a href="#">Facebook</a></button>
+        <button class="btn"><a href="#">YouTube</a></button>
+        <button class="btn"><a href="#">Instagram</a></button>
+
+    </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+    "name": "mosaico_3",
+    "class": "section",
+    "settings": [
+            {
+                "type": "header",
+                "content": "Mosaico 3 colunas"
+            },
+            {
+                "type": "image_picker",
+                "id": "img_box1",
+                "label": "imagem box 1"
+
+            },
+            {
+                "type": "text",
+                "id": "texto",
+                "label": "texto agora"
+            }
+        
+        ],
+    "presets": [
+        {
+            "name": "mosaico 3 colunas"
+        }
+    ]
+}
+
+{% endschema %}

@@ -1,0 +1,69 @@
+.containerr {
+  width: 100%;
+  margin: 0 auto;
+}
+.containerr .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerr .mosaicos {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+}
+.containerr .mosaicos .box_principal {
+  z-index: 1;
+  border-radius: 10px;
+}
+.containerr .mosaicos .mosaicos_secundarios {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.containerr .mosaicos .box {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+}
+.containerr .content_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerr .botoes .btn {
+  background-color: #0f0f0f;
+  border: none;
+  width: auto;
+  height: 100%;
+  padding: 5px 16px;
+  min-width: 125px;
+  max-height: 48px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 100px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.containerr .botoes .btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .mosaicos {
+    flex-direction: column;
+  }
+  .box_principal {
+    width: 100%;
+  }
+  .mosaicos_secundarios {
+    width: 100%;
+  }
+}/*# sourceMappingURL=custom-mosaico.css.map */

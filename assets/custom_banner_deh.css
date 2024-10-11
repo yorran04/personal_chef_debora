@@ -1,0 +1,176 @@
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+}
+
+
+
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    'item1 item1 item2 item2'
+    'item1 item1 item3 item4'
+    ;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+
+.link_content{
+     width: 100%;
+     height: 100%;
+}
+
+@media(max-width: 749px){
+    .content{
+     display: grid;
+     grid-template-areas: 
+    'item1 item1 item1 item1'
+    'item1 item1 item1 item1'
+    'item2 item2 item2 item2'
+    'item3 item3 item4 item4'
+    ;
+    }
+}
+
+
+.item1{
+    grid-area: item1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    
+}
+
+
+.item1:hover{
+    transform:scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.img1{
+   
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.content_text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+}
+
+.content_text--top{
+    justify-content: start;
+}
+
+.content_text--center{
+    justify-content: center;
+}
+
+.content_text--bottom{
+    justify-content: end;
+}
+
+
+
+
+
+.txt_img{
+    width: 100%;
+    padding: 5px 20px; 
+    margin: 0 auto;  
+}
+
+.item1 p{
+    width: 100%;
+    padding: 5px 20px;
+    margin: 0 auto;  
+}
+
+
+
+
+
+
+.item2{
+    grid-area: item2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.item2:hover{
+    transform:scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.paragrafo2{
+    width: 100%;
+    padding: 5px 20px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+.item3{
+    grid-area: item3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.item3:hover{
+    transform:scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.item4{
+    grid-area: item4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.item4:hover{
+    transform:scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
