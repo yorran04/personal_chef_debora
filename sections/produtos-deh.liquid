@@ -1,0 +1,131 @@
+{{"produtos_deh_custom.css" |  asset_url | stylesheet_tag}}
+
+
+{% style %}
+    .titulo{
+        font-size: {{section.settings.tamanho_fonte}}px ;
+        color: {{section.settings.cor_texto}}
+    }
+
+    .posicao_btn{
+        align-items: {{section.settings.direcao_btn}};
+    }
+
+    .container {
+        background-color: {{section.settings.background_color}};
+       
+    }
+{% endstyle %}
+
+
+<main class="container">
+
+
+    {% if section.settings.text_id != blank %}
+        <h1>{{section.settings.text_id}}</h1>
+    {% endif %}
+
+    {% if section.settings.paragrafo != blank %}
+        <p class="titulo">{{section.settings.paragrafo}}</p>        
+    {% endif %}
+    
+    
+        <div class="btn_container btn_container--{{section.settings.direcao_btn}}">
+            <button class="btn_rodape">
+                Veja mais opções de menus
+            </button>
+            </div>
+       
+  
+
+    <div class="rodape">
+        <div class="rodape-content one">atendimento</div>
+        <div class="rodape-content two">equipe</div>
+        <div class="rodape-content three">apresentação</div>
+        <div class="rodape-content four">avaliação</div>
+    </div>
+
+</main>
+
+
+{% schema %}
+{
+    "name": "produtos_debora",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "header",
+            "content": "coleção"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Cor de Fundo"    
+        },
+        {
+            "type":"image_picker",
+            "id": "img_deh",
+            "label": "Imagem"
+        },
+        {
+            "type": "text",
+            "id": "text_id",
+            "label": "rodaé",
+            "default": "rodapé"
+        },
+        {
+            "type": "textarea",
+            "id": "paragrafo",
+            "label": "Paragrafo"
+        },
+        {
+            "type": "color",
+            "id": "cor_texto",
+            "label": "cor do texto"
+            
+        },
+        {
+            "type": "range",
+      "id": "tamanho_fonte",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "tamanho fonte",
+      "default": 36
+        },
+        {
+            "type": "header",
+            "content": "botoes"
+        },
+        {
+            "type": "select",
+            "id": "direcao_btn",
+            "label": "direção botão",
+            "options": [
+                {
+                    "value": "start",
+                    "label": "Esquerda"
+                },
+                {
+                    "value": "center",
+                    "label": "Centro"
+                },
+                {
+                    "value": "end",
+                    "label": "Direita"
+                }               
+               
+            ]
+            
+        }
+        
+        ],
+        "presets": [
+            {
+                "name": "deh produtos"
+            }
+        ]
+}
+{% endschema %}

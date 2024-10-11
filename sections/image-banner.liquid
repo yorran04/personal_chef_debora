@@ -2,6 +2,10 @@
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
+
+
+
+
     @media screen and (max-width: 749px) {
       #Banner-{{ section.id }}::before,
       #Banner-{{ section.id }} .banner__media::before,
@@ -20,6 +24,8 @@
         display: block;
       }
     }
+
+  
   {%- endstyle -%}
 {%- endif -%}
 
@@ -27,6 +33,12 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+  .titulo_cor{
+  color: {{section.settings.color-texto}};
+  font-weight: 600;
+  }
+
+
 {%- endstyle -%}
 
 {%- liquid
@@ -126,14 +138,27 @@
             >
               {{ block.settings.heading }}
             </h2>
+
+
+            
+            {% if section.settings.text_area != blank %}
+              <p class="titulo_cor">{{section.settings.text_area}}</p>
+            {% endif %}
+
+
+
+
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
+
+
+
           {%- when 'buttons' -%}
             <div
-              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
-              {{ block.shopify_attributes }}
+              class="banner__buttons {% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %} {{block.settings.btn_color}}" 
+              {{ block.shopify_attributes }} 
             >
               {%- if block.settings.button_label_1 != blank -%}
                 <a
@@ -142,7 +167,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button color-{{section.settings.color_scheme}}{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -191,9 +216,24 @@
       "min": 0,
       "max": 100,
       "step": 10,
-      "unit": "%",
+      "unit": "px",
       "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
       "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Paragrafo"
+    },
+    {
+      "type": "textarea",
+      "id": "text_area",
+      "label": "Paragrafro do banner",
+      "default": "Paragrafo banner"
+    },
+    {
+      "type":"color",
+      "id": "color-texto",
+      "label": "escolha a cor"
     },
     {
       "type": "select",
@@ -476,9 +516,23 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+        },
+        {
+          "type":"header",
+          "content": "Cor Botão"
+         
+        },
+        {
+
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "default": "scheme-1"
+          
         }
       ]
     }
+    
   ],
   "presets": [
     {

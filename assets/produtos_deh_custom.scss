@@ -1,0 +1,52 @@
+.container{
+    background-color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    
+    .btn_container{
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .btn_rodape{
+        padding: 15px;
+        border: none;
+        background-color: #eee;
+        color: black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+
+
+    .rodape{
+        display: flex;
+        width: 100%;
+        
+        
+    }
+
+    .rodape-content{
+        width: 25%;
+        padding: 20px 40px;
+    }
+
+    .one{
+        background-color: rgb(208, 255, 0);
+    }
+
+    .two{
+        background-color: rgb(43, 255, 0);
+    }
+    .three{
+        background-color: rgb(0, 225, 255);
+    }
+    .four{
+        background-color: red;
+    }
+}

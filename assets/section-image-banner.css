@@ -4,6 +4,7 @@
   flex-direction: column;
   z-index: auto;
   isolation: isolate;
+  
 }
 
 .banner__box {
@@ -240,6 +241,7 @@
 
   .banner:not(.banner--mobile-bottom) .button--secondary {
     --alpha-button-background: 0;
+  
   }
 
   .banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {
@@ -330,6 +332,7 @@
 @media screen and (max-width: 749px) {
   .banner--mobile-bottom:not(.banner--stacked) .banner__content {
     order: 2;
+    
   }
 
   .banner:not(.banner--mobile-bottom) .field__input,
@@ -337,6 +340,11 @@
     background: transparent;
   }
 }
+
+
+
+
+
 
 .banner__box {
   padding: 4rem 1.5rem;
@@ -449,6 +457,8 @@
   word-break: break-word;
 }
 
+
+
 @media screen and (max-width: 749px) {
   .banner--content-align-mobile-right .banner__buttons--multiple {
     justify-content: flex-end;
@@ -490,3 +500,5 @@
     color: currentColor;
   }
 }
+
+
