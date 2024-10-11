@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+>>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
 {
   "sections": {
     "image_banner": {
@@ -6,20 +18,32 @@
         "heading": {
           "type": "heading",
           "settings": {
+<<<<<<< HEAD
             "heading": "Personal Chef",
+=======
+            "heading": "Browse our latest products",
+>>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
             "heading_size": "h0"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
+<<<<<<< HEAD
             "button_label_1": "como funciona",
+=======
+            "button_label_1": "Shop all",
+>>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
+<<<<<<< HEAD
             "button_style_secondary_2": false,
             "color_scheme": ""
+=======
+            "button_style_secondary_2": false
+>>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
           }
         }
       },
@@ -30,8 +54,11 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/flatlay-iron-skillet-with-meat-and-other-food.jpg",
         "image_overlay_opacity": 40,
+<<<<<<< HEAD
         "text_area": "A vida é muito curta para não comer aquele prato que você ama.",
         "color-texto": "",
+=======
+>>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
         "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
@@ -43,6 +70,7 @@
         "show_text_below": false
       }
     },
+<<<<<<< HEAD
     "collection_list_biY8bY": {
       "type": "collection-list",
       "blocks": {
@@ -105,11 +133,44 @@
         "texto_principal4": "Bolinho de carne",
         "link_texto4": "shopify:\/\/products\/bolinho-de-carne"
       }
+=======
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+>>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
     }
   },
   "order": [
     "image_banner",
+<<<<<<< HEAD
     "collection_list_biY8bY",
     "banner_site_deh_FxEqhF"
+=======
+    "featured_collection"
+>>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
   ]
 }

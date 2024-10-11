@@ -1,6 +1,20 @@
+<<<<<<< HEAD
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/logo-personal-chef_18fbeff1-47fd-4406-969c-da8e19b84c4e.png",
+=======
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "current": {
+>>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
     "logo_width": 90,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -163,8 +177,13 @@
           "background": "#242833",
           "background_gradient": "",
           "text": "#ffffff",
+<<<<<<< HEAD
           "button": "#334fb4",
           "button_label": "#ffffff",
+=======
+          "button": "#ffffff",
+          "button_label": "#000000",
+>>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
