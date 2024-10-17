@@ -1,15 +1,12 @@
-<<<<<<< HEAD
-=======
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
->>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -18,32 +15,20 @@
         "heading": {
           "type": "heading",
           "settings": {
-<<<<<<< HEAD
-            "heading": "Personal Chef",
-=======
             "heading": "Browse our latest products",
->>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
             "heading_size": "h0"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-<<<<<<< HEAD
-            "button_label_1": "como funciona",
-=======
             "button_label_1": "Shop all",
->>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
-<<<<<<< HEAD
             "button_style_secondary_2": false,
             "color_scheme": ""
-=======
-            "button_style_secondary_2": false
->>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
           }
         }
       },
@@ -52,13 +37,10 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/flatlay-iron-skillet-with-meat-and-other-food.jpg",
+        "image": "shopify://shop_images/flatlay-iron-skillet-with-meat-and-other-food.jpg",
         "image_overlay_opacity": 40,
-<<<<<<< HEAD
-        "text_area": "A vida é muito curta para não comer aquele prato que você ama.",
+        "text_area": "Paragrafo banner",
         "color-texto": "",
-=======
->>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
         "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
@@ -69,108 +51,9 @@
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
-    },
-<<<<<<< HEAD
-    "collection_list_biY8bY": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_dXhpHV": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sentados-a-mesa"
-          }
-        },
-        "featured_collection_q8cqpz": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "festas-e-coqueteis"
-          }
-        },
-        "featured_collection_8mjkMY": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "buffet"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_dXhpHV",
-        "featured_collection_q8cqpz",
-        "featured_collection_8mjkMY"
-      ],
-      "settings": {
-        "title": "Escolha o formato do evento",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "scheme-4",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "banner_site_deh_FxEqhF": {
-      "type": "banner_site_deh",
-      "settings": {
-        "img_banner": "shopify:\/\/shop_images\/a-hand-removes-a-sweater-from-a-clothing-rack.jpg",
-        "image_overlay_opacity": 80,
-        "texto_principal": "Bolinho de abobora",
-        "text_area": "paragrafo para texto",
-        "color_text": "#121212",
-        "text_aline": "center",
-        "link_texto": "shopify:\/\/products\/ddfaf",
-        "img_banner2": "shopify:\/\/shop_images\/vintage-shopping.jpg",
-        "texto_principal2": "Camarão",
-        "text_area2": "dadofdao",
-        "color_text2": "#121212",
-        "link_texto2": "shopify:\/\/products\/camarao",
-        "img_banner3": "shopify:\/\/shop_images\/minimalist-retail-clothing-display.jpg",
-        "texto_principal3": "Queijos",
-        "link_texto3": "shopify:\/\/products\/queijos",
-        "img_banner4": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
-        "texto_principal4": "Bolinho de carne",
-        "link_texto4": "shopify:\/\/products\/bolinho-de-carne"
-      }
-=======
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
->>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
     }
   },
   "order": [
-    "image_banner",
-<<<<<<< HEAD
-    "collection_list_biY8bY",
-    "banner_site_deh_FxEqhF"
-=======
-    "featured_collection"
->>>>>>> 38c2c0fa2c27b9b7d2032b06acfd7f8e71897949
+    "image_banner"
   ]
 }
